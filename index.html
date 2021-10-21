@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=0.2">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather WebApp</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+
+                <div class="others">
+                   Temperature-Range: 
+                </div>
+            </div>
+            <div class="search-box">
+
+                <h2 class="head">Weather App</h2><br>
+                    <form action="" onsubmit="return false">
+                      <input type="text" class="search" placeholder="Search for a City Name..." />
+                      <button type="submit" class="btn">Submit</button>
+                      <p class="error"></p>
+                    
+                    </form>
+                    <h2 class="city">Weather in New Delhi</h2>
+                    <h1 class="temp">39°C</h1>
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                        <div class="description">Sunny</div>
+                      </div>
+                    <div class="humidity">Humidity: 60%</div>
+                    <div class="wind">Wind speed: 6.2 km/h</div>
+
+                </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/DElhi</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="future-forecast">
+        
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">-&#176; C</div>
+                <div class="temp">-&#176; C</div>
+                <div class="humid">-</div>
+                <div class="wcondition">-</div>
+                
+                
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">-&#176; C</div>
+                <div class="temp">- &#176; C</div>
+                <div class="humid">-</div>
+                <div class="wcondition">-</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thu</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">-&#176; C</div>
+                <div class="temp">-&#176; C</div>
+                <div class="humid">-</div>
+                <div class="wcondition">-</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">-&#176; C</div>
+                <div class="temp">-&#176; C</div>
+                <div class="humid">-</div>
+                <div class="wcondition">-</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">-&#176; C</div>
+                <div class="temp">-&#176; C</div>
+                <div class="humid">-</div>
+                <div class="wcondition">-</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>
